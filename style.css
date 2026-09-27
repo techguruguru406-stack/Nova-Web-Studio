@@ -2243,3 +2243,70 @@ body::after {
     }
 
 }
+
+/* =========================================================
+   TECHNICAL STACK
+========================================================= */
+
+.tech-stack {
+    padding: 110px 0;
+    background: #0a0f18;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.tech-card {
+    min-height: 150px;
+    padding: 26px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.025);
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0,229,255,0.3);
+    background: rgba(255,255,255,0.04);
+}
+
+.tech-card strong {
+    display: block;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.tech-card span {
+    display: block;
+    color: #929baa;
+    font-size: 0.86rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 950px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tech-stack {
+        padding: 85px 0;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-card {
+        min-height: auto;
+    }
+}
